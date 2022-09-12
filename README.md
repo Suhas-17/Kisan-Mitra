@@ -1,0 +1,2 @@
+# Kisan Mitra - Comprehensive Application for Farmers
+"Kisan Mitra" is a hybrid app that attempts to help farmers learn about different crops, crop rates, government farmer schemes, and weather forecasts. Based on soil and weather conditions, our machine learning-based recommendation algorithm describes the best crop to plant and the yield that can be obtained. Farmers can thus cultivate fresh crops in different seasons, profit more, and minimize soil degradation by using our technique.
