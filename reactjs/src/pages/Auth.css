@@ -1,0 +1,98 @@
+.auth {
+  padding: 10vh 0;
+  background: var(--background);
+  color: var(--primary);
+  height: 80vh;
+  overflow-y: scroll;
+  font-family: "Comic Sans MS", "Comic Sans";
+}
+
+.auth__container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 30px;
+  background: var(--navbar);
+  max-width: 600px;
+  border-radius: 10px;
+  line-height: 35px;
+}
+
+.type {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.type p {
+  cursor: pointer;
+}
+
+.auth__containerPhone {
+  display: flex;
+  min-width: none;
+}
+
+.country__code {
+  margin-right: 5px;
+  padding: 0 5px;
+  border-radius: 5px;
+  background: var(--card);
+  color: var(--disabled);
+  font-size: small;
+}
+
+.auth__containerPhone input {
+  flex: 1;
+}
+
+.auth__containerInput {
+  border: none;
+  /* height: 35px; */
+  border-radius: 5px;
+  padding: 8px 10px;
+  background: var(--card);
+  color: var(--secondary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px  var(--card) inset !important;
+  -webkit-text-fill-color: var(--primary) !important;
+}
+
+.auth__password {
+  font: caption;
+  /* font-size: 16px; */
+}
+
+.a__tag {
+  text-decoration: underline;
+  font-size: small;
+  color: var(--accent);
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.auth__containerBtn {
+  border: none;
+  height: 35px;
+  width: 40%;
+  min-width: fit-content;
+  border-radius: 5px;
+  padding: 0 10px;
+  background: var(--card);
+  align-self: center;
+  background: var(--accent);
+  font-family: "Comic Sans MS", "Comic Sans";
+  cursor: pointer;
+}
+
+.signup__container span {
+  color: var(--disabled);
+}
+
+#recaptcha-container {
+  margin: 10px auto;
+}

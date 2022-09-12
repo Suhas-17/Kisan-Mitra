@@ -1,0 +1,74 @@
+.account {
+  min-height: 100vh;
+  /* overflow-y: scroll; */
+  background: var(--background);
+}
+
+.account__container {
+  padding: min(50px, 5vw);
+  line-height: 30px;
+  background: var(--background);
+  color: var(--primary);
+}
+
+.info {
+  padding: 20px;
+  border-radius: 5px;
+  background: var(--card);
+}
+
+.info b,
+.info center {
+  color: var(--disabled);
+}
+
+.btn__div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logout_btn {
+  color: var(--primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+.invoice__btn{
+  width: 150px;
+  background: var(--accent);
+  border: none;
+  /* padding: 5px; */
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--background);
+}
+
+#address {
+  background: transparent;
+  border: none;
+  color: var(--primary);
+  width: max(20%, 180px);
+  vertical-align: middle;
+  resize: none;
+  overflow-y: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#address::placeholder {
+  color: var(--primary);
+}
+
+#address:focus {
+  outline: none;
+}
+
+.cursor__pointer {
+  cursor: pointer;
+  padding: 2px 8px 0 0;
+}

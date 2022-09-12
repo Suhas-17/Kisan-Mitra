@@ -1,0 +1,151 @@
+.header {
+  background-color: var(--navbar);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  font-family: "Comic Sans MS", "Comic Sans";
+  height: 60px;
+}
+
+.header__main {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__logo {
+  font-size: 24px;
+  color: var(--primary);
+  margin: 0 30px;
+  text-decoration: none;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  height: 35px;
+}
+
+.header__searchInput {
+  height: 100%;
+  border: none;
+  width: 100%;
+  align-self: flex-end;
+  max-width: 300px;
+  border-radius: 5px;
+  padding: 0 10px;
+  background: var(--card);
+  color: var(--secondary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--card) inset !important;
+  -webkit-text-fill-color: var(--primary) !important;
+}
+
+.header__searchInput::placeholder {
+  color: var(--secondary);
+}
+
+.header__searchIcon {
+  padding-left: 5px;
+  margin-top: 5px;
+  color: var(--accent);
+}
+
+.header__options {
+  margin-right: max(3vw, 20px);
+  color: var(--primary);
+}
+
+.header__option {
+  margin-left: 30px;
+  color: var(--primary);
+  font-size: small;
+  border: none;
+  background: var(--navbar);
+  cursor: pointer;
+}
+
+.header__option:focus-visible {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner {
+  display: flex;
+}
+
+.outer,
+.menu {
+  display: none;
+}
+@media (max-width: 950px) {
+  .inner {
+    display: none !important;
+  }
+  .outer {
+    display: flex;
+    margin: 0 15px;
+  }
+  .header {
+    height: 110px;
+  }
+  .header__logo {
+    font-size: 22px;
+    flex: 1;
+    margin-left: 15px;
+    margin-right: 0;
+  }
+  .header__searchInput {
+    max-width: none;
+  }
+  .header__searchIcon {
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
+  .header__options {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: flex-end;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    height: 100vh;
+    background: var(--navbar);
+    margin: 0;
+  }
+
+  .header__option {
+    font-size: larger;
+    padding: 20px;
+    margin-right: 30px;
+  }
+
+  .bottom__option {
+    padding-bottom: 100px;
+  }
+
+  .menu {
+    display: block;
+    cursor: pointer;
+    z-index: 20;
+    margin-right: max(3vw, 20px);
+    color: var(--primary);
+  }
+
+  .header__optionsHide {
+    display: none;
+  }
+}
